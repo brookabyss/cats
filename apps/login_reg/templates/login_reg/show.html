@@ -1,0 +1,13 @@
+{% extends 'login_reg/base.html' %}
+{% block body%}
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<h1>Success!!Welcome {{name}}.</h1>
+<h3>Successfully {{ action }}</h3>
+<a href="{% url 'auth:logout' %}">logout</a>
+{% endblock %}
