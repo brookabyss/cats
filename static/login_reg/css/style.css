@@ -1,0 +1,9 @@
+.error_page{
+  background-image: url('/images/error.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width : 600;
+  height: 600;
+}
